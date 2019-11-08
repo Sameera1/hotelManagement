@@ -1,0 +1,71 @@
+<html>
+<head>
+<title>Hotel_DayOut.com</title>
+<link href="style.css" rel="stylesheet">
+</head>
+<body bgcolor="gray">
+<div class="index">
+<ul>
+<li><a href="home.html">Home</a></li>
+<li><a href="aboutus.html">About Us</a>
+	<ul>
+		<li><a href="OurTeam.html">Our Team</a></li>
+		<li><a href="missionvision.html">Mission &amp; Vision</a></li>
+	</ul></li>
+<li><a href="bookings.html">Bookings</a></li>
+<li><a href="ourgallery.html">Our Gallery</a></li>
+<li><a href="ContactUs.html">Contact Us</a></li>
+</ul>
+</div>
+<div class="intro">
+<div class="introimage"><div class="slider">
+<div id="img"><img src="images/50.jpg"></div>
+</div></div>
+<div class="introtext">
+<h1>Welcome To Hotel DayOut!</h1><p>It's all about never ending bliss! Beautiful landscaped gardens with paved walkways and lily ponds, inviting swimming pool
+with its alluring pool bar and rows of quaint chalets that tug at the heart strings. Now doesn't that sounds like an image from
+a story book. It's no wonder because Hotel Safari is a dream come true!</p>
+</div>
+</div>
+<script>
+var img=document.getElementById('img');
+var images=['images/13.jpg','images/61.jpg','images/86.jpg','images/32.jpg','images/50.jpg'];
+var x=0;
+function slide(){
+if(x<images.length){
+x=x+1;
+}else{
+x=1;
+}
+img.innerHTML="<img src="+images[x-1]+">";
+}
+setInterval(slide,2000);
+</script>
+<style>
+.slider{
+width:90%;
+height:500px;
+box-sizing:border-box;
+box-shadow:5px 5px 10px grey;
+margin:20px auto;
+}
+img{
+width:750px;
+height:600px;
+}
+</style>
+<footer>
+<div class="box2">
+			<div class="title"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+				<h2><align="left">GET IN TOUCH</align></h2>
+			</div>
+			<p style="text-align: left"><img src="images/icon_home.png"  style="width: 50px; height: 50px"  alt=""/>301,Airport Road,Anuradhapura,Sri Lanka.</p></br>
+			<p style="text-align: left"><img src="images/filled_message1600.png" style="width: 45px; height: 45px" alt=""/>info@hotelDayOut.com</p></br>
+                        
+                        <p style="text-align: left"><img src="images/black-website-icon_208881.png" style="width: 40px; height: 40px" alt=""/>www.hotelDayOut.com</p></br>
+                        <p style="text-align: left"><img src="images/mobile_phone.png" style="width: 50px; height: 50px" alt=""/>(+025) 223 41 02</p></br>
+                       
+</div>
+</footer>
+</body>
+</html>
